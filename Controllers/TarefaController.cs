@@ -6,7 +6,7 @@ using TodoBackEnd.Repositories;
 namespace TodoBackEnd.Controllers
 {
     [ApiController]
-    [Route("tarefa")]
+    [Route("cheapvegarden")]
     public class TarefaController : ControllerBase
     {
         // GET http://localhost:5000/tarefa
