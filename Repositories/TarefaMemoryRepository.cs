@@ -12,8 +12,8 @@ namespace TodoBackEnd.Repositories
         {
             if (tarefas.Count == 0)
             {
-                tarefas.Add(new Tarefa { Id = "1", Texto = "Alface", min = 35, max = 65, humidade = 87, temperatura = 35, Finalizada = true });
-                tarefas.Add(new Tarefa { Id = "2", Texto = "Rucula", Finalizada = false });
+                tarefas.Add(new Tarefa { Id = "1", Texto = "Alface", min = 35, max = 65, umidade = 37, umidadeSolo = 77, temperatura = 35, Finalizada = true });
+                tarefas.Add(new Tarefa { Id = "2", Texto = "Rucula", min = 15, max = 85, umidade = 27, umidadeSolo = 59, temperatura = 34, Finalizada = false });
             }
             return tarefas;
         }
@@ -30,7 +30,8 @@ namespace TodoBackEnd.Repositories
             tarefa.Finalizada = model.Finalizada;
             tarefa.min = model.min;
             tarefa.max = model.max;
-            tarefa.humidade = model.humidade;
+            tarefa.umidade = model.umidade;
+            tarefa.umidadeSolo = model.umidadeSolo;
             tarefa.temperatura = model.temperatura;
             tarefa.Texto = model.Texto;
         }
