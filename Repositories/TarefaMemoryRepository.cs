@@ -12,8 +12,8 @@ namespace TodoBackEnd.Repositories
         {
             if (tarefas.Count == 0)
             {
-                tarefas.Add(new Tarefa { Id = "1", Texto = "Estudar para a prova", Finalizada = true });
-                tarefas.Add(new Tarefa { Id = "2", Texto = "Lavar o carro", Finalizada = false });
+                tarefas.Add(new Tarefa { Id = "1", Texto = "Alface", min = 35, max = 65, humidade = 87, temperatura = 35, Finalizada = true });
+                tarefas.Add(new Tarefa { Id = "2", Texto = "Rucula", Finalizada = false });
             }
             return tarefas;
         }
